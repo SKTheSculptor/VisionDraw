@@ -1,53 +1,61 @@
 # VisionDraw
 
-**VisionDraw** is a touchless drawing application that allows users to draw on a digital canvas using hand gesture recognition with OpenCV and MediaPipe.
+A touchless drawing application using hand gesture recognition with OpenCV and MediaPipe.
 
-# Features
+## Features
+
 - **Hand Gesture Drawing**: Draw on a virtual canvas using index finger gestures
-- **Real-time Camera Feed**: Live webcam feed displayed in the top-right corner
-- **Selective Erase**: Select and erase specific drawn regions using a two-finger gesture
-- **Full Canvas Clear**: Clear the entire canvas using a keyboard shortcut
-- **Intuitive Layout**: Split-screen design with the drawing canvas on the left and controls on the right
+- **Real-time Camera Feed**: Live video feed displayed in the top-right corner
+- **Selective Erase**: Select and erase specific drawn regions with two-finger gesture
+- **Full Canvas Clear**: Clear entire canvas with keyboard shortcut
+- **Intuitive Layout**: Split-screen design with drawing canvas on the left and controls on the right
 
-# Requirements
-- **Python 3.7+**
-- **OpenCV**
-- **MediaPipe**
-- **NumPy**
+## Requirements
 
-# Installation
-Clone the Repository:
-git clone https://github.com/SKTheSculptor/VisionDraw.git
-cd VisionDraw
+- Python 3.7+
+- OpenCV
+- MediaPipe
+- NumPy
 
-Install Dependencies:
-pip install opencv-python mediapipe numpy
+## Installation
 
-# Usage
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/SKTheSculptor/VisionDraw.git
+   cd visiondraw
+   ```
+
+2. Install dependencies:
+   ```bash
+   pip install opencv-python mediapipe numpy
+   ```
+
+## Usage
+
+Run the application:
+```bash
 python main.py
+```
 
-# Controls
+## Controls
 
-Hand Gestures:
-- **Index Finger Up**: Draw Mode – move finger to draw on the canvas
-- **Index + Middle Finger Up**: Selection Mode – select region to erase
+### Gestures:
+- **Index Finger Up**: Draw mode - move finger to draw on canvas
+- **Index + Middle Finger Up**: Selection mode - select region to erase
 
-Keyboard:
-- **Q**     : Quit application
-- **E**     : Select drawn region for deletion
-- **ENTER** : Confirm deletion of selected region
-- **ESC**   : Cancel selection
-- **C**     : Clear entire canvas
+### Keyboard:
+- **Q**: Quit application
+- **E**: Select drawn region for deletion
+- **ENTER**: Confirm deletion of selected region
+- **ESC**: Cancel selection
+- **C**: Clear entire canvas
 
-# How It Works
-- Uses **MediaPipe hand tracking** to detect finger positions and gestures
-- **OpenCV** maps finger movement to the drawing canvas
-- Gesture logic controls drawing, selection, and erasing
+## How It Works
 
-# Screen Layout
-- **Left Area (75%)**: Drawing canvas controlled using hand gestures
-- **Top-Right Area (25%)**: Live camera feed showing hand movement
+The application uses MediaPipe's hand tracking to detect finger positions and gestures. The screen is divided into:
+- **Left Area (75%)**: Drawing canvas where you can draw with hand gestures
+- **Top-Right Area (25%)**: Live camera feed showing your hand
 - **Bottom-Right Area**: Instruction panel with controls
 
-Note:
 Coordinates are automatically scaled to ensure accurate drawing across the canvas area.
+
