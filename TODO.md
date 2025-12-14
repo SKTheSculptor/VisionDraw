@@ -1,8 +1,0 @@
-- [x] Modify canvas size to 800x720 (CANVAS_W=800, CANVAS_H=720)
-- [x] Create composite display image of 1280x720
-- [x] Resize camera feed to 480x480 and place in top-right (x=800-1280, y=0-480)
-- [x] Add instruction panel below camera (x=800-1280, y=480-720) with white text on black background
-- [x] Place scaled canvas in left area (x=0-800, y=0-720)
-- [x] Adjust coordinate mapping: scale x by 0.625, y remains 1:1
-- [x] Update drawing logic to use scaled coordinates
-- [x] Show composite image in window

@@ -21,7 +21,7 @@ A touchless drawing application using hand gesture recognition with OpenCV and M
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/virtual-painter.git
+   git clone https://github.com/SKTheSculptor/VisionDraw.git
    cd virtual-painter
    ```
 
